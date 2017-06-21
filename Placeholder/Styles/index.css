@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* This will stop the coloring of all the <a> tags. I plan to style the links myself. */
+a {
+    text-decoration: none;
+    color: red;
+
+}
+a:visited {
+	color: purple;
+}
+a:hover 
+{
+     text-decoration: none;
+     cursor: pointer;  
+}
+
+ol {
+	list-style-type: none;
+	text-align: center;
+}
+
+body {
+	background-color: black;
+}
+
+img {
+	width: 500px;
+	height: auto;
+}
+
+div {
+	display: block;
+}
+
+.container {
+	margin: 100px auto;
+	color: white;
+	text-align: center;
+}
