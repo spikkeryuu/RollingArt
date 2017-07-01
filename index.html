@@ -19,57 +19,82 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <!-- Bootstrap requires a containing element to wrap site contents and house our grid system.
     Use .container-fluid for a full width container, spanning the entire width of your viewport.-->
   <div class="container-fluid">
+
+    <div class="row">
       <p align="right">
         <a class="link" href="tel:1-678-439-8424">(678) 439-8424</a>
-        <a class="link" href="facebook.com/rollingart"> Facebook</a> Twitter Instagram LinkedIn
+        <a class="link" href="facebook.com/rollingart">Facebook</a>
+        Twitter
+        Instagram
+        LinkedIn
       </p>
-      
-    <br/>
-      
-    <div class="navigation-bar" align="center">
-      <div class="navigation-bar-text">
-        <p align="right">
-              <a class="link" href="#about">About</a> Services Contact Gallery
-        </p>
-      </div>
-
-        <img src="assets/header-logo.png" class="img-responsive" alt="Rolling Art" align="center">
     </div>
 
+    <div class="row" id="navigation-bar" align="center">
+        <div id="navigation-bar-text">
+          <p align="right">
+                <a class="link" href="#about">About</a>
+                <a class="link" href="#services">Services</a>
+                Contact
+                Gallery
+          </p>
+        </div>
 
-    <div class="about">
+          <img src="assets/header-logo.png" class="img-responsive" alt="Rolling Art" align="center">
+    </div>
+
+    <div class="row" id="about" align="center">
+        <h1>
+            <!-- 
+            TODO:
+            Need to remove linking from the "About" header
+             -->
+            <a name="about"><p>About</p></a>
+        </h1>
+        <div id="about-text-box">
+            <p align="center">Rolling Art began as a passion for detailing and turned into a full time business venture. The company founder, Ashton Hawes, took his passion for cars to a higher level by honing his detailing skills and challenging himself on difficult restoration projects. Rolling Art offers a variety of these trained skills depending on the level of service needed for each vehicle.</p>
+        </div>
+    </div>
+
+    <div class="row" id="quote" align="center">
+          <h3>
+              <blockquote class="blockquote">
+                  <p class="m-b-0">I am dedicated to restoring and maintaining my customers cars that we as enthusiasts see as <b>Rolling Art</b>.</p>
+                  <footer class="blockquote-footer">owner, <cite>Ashton Hawes</cite></footer>
+              </blockquote>
+          </h3>
+    </div>
+
+    <div class="row" id="services" align="center">
+        <h1>
+            <!-- 
+            TODO:
+            Need to remove linking from the "Services" header
+            Possibly change background color
+             -->
+          <a name="services"><p align="center">Services</p></a>
+        </h1>
+
+        <!-- TODO:
+          Create column based setup, 2 columns per row
+          of services provided by rolling art
+         -->
+
+    </div>
+
+    <div class="row" id="contact" align="center">
       <h1>
-          <!-- 
-          TODO:
-          Need to remove linking from the "About" header
-           -->
-          <a name="about"><p align="center">About</p></a>
-      </h1>
-      <div class="text-box">
-          <p align="center">Rolling Art began as a passion for detailing and turned into a full time business venture. The company founder, Ashton Hawes, took his passion for cars to a higher level by honing his detailing skills and challenging himself on difficult restoration projects. Rolling Art offers a variety of these trained skills depending on the level of service needed for each vehicle.</p>
-      </div>
-    </div>
-
-    <div class="quote">
-        <h3>
-            <blockquote class="blockquote" align="center">
-                <p class="m-b-0">I am dedicated to restoring and maintaining my customers cars that we as enthusiasts see as <b>Rolling Art</b>.</p>
-                <footer class="blockquote-footer">owner, <cite>Ashton Hawes</cite></footer>
-            </blockquote>
-        </h3>
-    </div>
-
-    <div class="services container-fluid">
-      <h1>
-          <!-- 
-          TODO:
-          Need to remove linking from the "Services" header
-           -->
-        <a name="services"><p align="center">Services</p></a>
+        <!-- 
+        TODO:
+        Need to remove linking from the "Contact" header
+        Possibly change background color
+         -->
+        <a name="contact"><p align="center">Contact</p></a>
       </h1>
     </div>
 
