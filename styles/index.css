@@ -5,8 +5,8 @@
 I plan to style the links myself. */
 a {
     color: inherit;
-    text-decoration: none;
 }
+
 a:hover 
 {
      color: inherit;
@@ -16,7 +16,8 @@ a:hover
 
 /* This is where I style the links myself */
 .link {
-	color: #005376;
+	color: white;
+	text-decoration: underline;
 }
 
 .link:hover {
@@ -29,14 +30,24 @@ a:hover
 	border: 0px;
 }
 
-#navigation-bar {
-	background-color: #37393d;
+#social-media img {
+	display: inline;
+	margin: 0 5px;
 }
 
-#navigation-bar-text {
+#navigation-bar {
+	background-color: #37393d;
 	color: white;
 	align-content: right;
 	padding-right: 10px;
+	word-spacing: 1px;
+}
+
+#title-bar {
+	background-color: #37393d;
+	background: url("assets/porsche.jpg") no-repeat center center fixed;
+	background-size: 100% auto;
+	height: auto;
 }
 
 #about {
@@ -48,12 +59,27 @@ a:hover
 	width: 70%;
 }
 
+#quote {
+	margin: 0px auto;
+}
+
 #services {
-	background-color: #005376;
+	background-color: #37393d;
 	color: white;
 }
 
 #contact {
 	background-color: #005376;
 	color: white;
+}
+
+#gallery {
+	background-color: white;
+	color: black;
+}
+
+#gallery-item:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

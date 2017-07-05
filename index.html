@@ -24,66 +24,127 @@
     <!-- Bootstrap requires a containing element to wrap site contents and house our grid system.
     Use .container-fluid for a full width container, spanning the entire width of your viewport.-->
   <div class="container-fluid">
+    <!-- 
+    TODO:
+    Better way of presenting social media links for larger devices.
+    -->
+    <div class="row" id="social-media" align="right">
+      <div class="navbar-default navbar-fixed-top">
+        <a href="tel:1-678-439-8424" target="_blank"><img src="assets/phone.png" class="img-responsive" alt="(678) 439-8424"></a>
+        <a href="https://www.facebook.com/rollingartdetailing/" target="_blank"><img src="assets/facebook.png" class="img-responsive" alt="facebook.com/rollingartdetailing"></a>
+        <a href="https://www.instagram.com/rollingart_detailing/" target="_blank"><img src="assets/instagram.png" class="img-responsive" alt="instagram.com/rollingart_detailing"></a>
+      <!-- Images from http://www.freepik.com/ -->
+      </div>
+    </div>
 
-    <div class="row">
+
+    <!-- 
+    TODO:
+    This section... disappeared. Figure out why that happened. Tried to separate navbar into 
+    separate bootstrap row and now contents are not aligned.
+     -->
+    <div class="row" id="navigation-bar" align="center">
       <p align="right">
-        <a class="link" href="tel:1-678-439-8424">(678) 439-8424</a>
-        <a class="link" href="facebook.com/rollingart">Facebook</a>
-        Twitter
-        Instagram
-        LinkedIn
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#services">Services</a>
+            <a class="link" href="#contact">Contact</a>
+            <a class="link" href="#gallery">Gallery</a>
       </p>
     </div>
 
-    <div class="row" id="navigation-bar" align="center">
-        <div id="navigation-bar-text">
-          <p align="right">
-                <a class="link" href="#about">About</a>
-                <a class="link" href="#services">Services</a>
-                Contact
-                Gallery
-          </p>
-        </div>
-
-          <img src="assets/header-logo.png" class="img-responsive" alt="Rolling Art" align="center">
+    <div class="row" id="title-bar" align="center">
+      <!-- 
+      TODO:
+      Background image for website banner
+       -->
+      <img src="assets/header-logo.png" class="img-responsive" alt="Rolling Art" align="center">
     </div>
 
-    <div class="row" id="about" align="center">
+
+    <!--  
+    TODO:
+    We want the "About" and "Quote" to be on separate rows for smaller devices, columns side by side for larger devices.
+    -->
+    <div class="row" align="center">
+      <div class="col-xs-7" id="about" align="center">
         <h1>
-            <!-- 
-            TODO:
-            Need to remove linking from the "About" header
-             -->
-            <a name="about"><p>About</p></a>
+            <p name="about">About</p>
         </h1>
         <div id="about-text-box">
             <p align="center">Rolling Art began as a passion for detailing and turned into a full time business venture. The company founder, Ashton Hawes, took his passion for cars to a higher level by honing his detailing skills and challenging himself on difficult restoration projects. Rolling Art offers a variety of these trained skills depending on the level of service needed for each vehicle.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="row" id="quote" align="center">
-          <h3>
+      <div class="col-xs-5" id="quote" align="center">
+          <h4>
               <blockquote class="blockquote">
                   <p class="m-b-0">I am dedicated to restoring and maintaining my customers cars that we as enthusiasts see as <b>Rolling Art</b>.</p>
                   <footer class="blockquote-footer">owner, <cite>Ashton Hawes</cite></footer>
               </blockquote>
-          </h3>
+          </h4>
+      </div>
     </div>
 
     <div class="row" id="services" align="center">
         <h1>
             <!-- 
             TODO:
-            Need to remove linking from the "Services" header
             Possibly change background color
              -->
-          <a name="services"><p align="center">Services</p></a>
+          <p name="services">Services</p>
         </h1>
 
         <!-- TODO:
-          Create column based setup, 2 columns per row
-          of services provided by rolling art
+          Fill out relevant information
          -->
+        <div class = "row">
+          <div class="col-xs-6">
+            <p><h4>Basic Detailing</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+          
+          <div class="col-xs-6">
+            <p><h4>Intermediate Detailing</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class="col-xs-6">
+            <p><h4>Advanced Detailing</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+          
+          <div class="col-xs-6">
+            <p><h4>Paint Correction</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class="col-xs-6">
+            <p><h4>Paint Chip Correction</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+          
+          <div class="col-xs-6">
+            <p><h4>And more!</h4></p>
+            <p>
+              Lorem ipsum dolor sit amet, est maiorum appetere qualisque cu, his ad sint eius euripidis, no oportere expetenda mei. Nec hinc autem integre ei, iusto nemore id vix, legere atomorum vituperata ut qui.
+            </p>
+          </div>
+        </div>
+
 
     </div>
 
@@ -91,17 +152,54 @@
       <h1>
         <!-- 
         TODO:
-        Need to remove linking from the "Contact" header
         Possibly change background color
+        Web form
          -->
-        <a name="contact"><p align="center">Contact</p></a>
+        <p name="contact">Contact</p>
       </h1>
     </div>
 
+    <div class="row" id="gallery" align="center">
+      <h1>
+        <!-- 
+        TODO:
+        Possibly change background color
+        Load images as you scroll as opposed to upon load to decrease page load times.
+        Present modal images.
+         -->
+        <p name="gallery">Gallery</p>
+      </h1>
+
+      <!-- TODO:
+      Turn javascript code here into separate js file with reusable function.
+      Possibly implement some PHP. Will need to host on domain for this to work nicely. Javascript not server-side,
+      so not a good solution for trying to load server-side images.
+      -->
+      <!-- This column is for 480px- -->
+      <div class="col-xs-4">
+        <script type="text/javascript">
+          var i = 0;
+          for (i=0; i<=10; i++) {
+            document.write("<img src=\"gallery/" + i + ".jpg\"/ class=\"img-responsive\" id=\"gallery-item\"> <br />");
+          }
+        </script>
+      </div>
+      
+      <!-- TODO:
+      Better solution to this than tacking on three of the iterator i
+       -->
+      <!-- This column is for 481px+ -->
+      <div class="col-xs-8">
+        <script type="text/javascript">
+          var i = 0;
+          for (i=0; i<=8; i++) {
+            document.write("<img src=\"gallery/" + i + i + i +".jpg\"/ class=\"img-responsive\" id=\"gallery-item\"> <br />");
+          }
+        </script>
+      </div>
+    </div>    
+
   </div>
-
-
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
