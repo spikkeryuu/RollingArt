@@ -28,31 +28,25 @@
     TODO:
     Better way of presenting social media links for larger devices.
     -->
-    <div class="row" id="social-media" align="right">
-      <div class="navbar-default navbar-fixed-top">
-        <a href="tel:1-678-439-8424" target="_blank"><img src="assets/phone.png" class="img-responsive" alt="(678) 439-8424"></a>
-        <a href="https://www.facebook.com/rollingartdetailing/" target="_blank"><img src="assets/facebook.png" class="img-responsive" alt="facebook.com/rollingartdetailing"></a>
-        <a href="https://www.instagram.com/rollingart_detailing/" target="_blank"><img src="assets/instagram.png" class="img-responsive" alt="instagram.com/rollingart_detailing"></a>
-      <!-- Images from http://www.freepik.com/ -->
+    <div class="row">
+      <div class="navbar-default navbar-fixed-top" id="navigation-bar">
+        <div class="col-xs-7" align="left">
+          <a class="link" href="#about">About</a>
+          <a class="link" href="#services">Services</a>
+          <a class="link" href="#contact">Contact</a>
+          <a class="link" href="#gallery">Gallery</a>
+        </div>
+
+        <div class="col-xs-4" align="right" id="social-media">
+          <a href="tel:1-678-439-8424" target="_blank"><img src="assets/phone.png" class="img-responsive" alt="(678) 439-8424"></a>
+          <a href="https://www.facebook.com/rollingartdetailing/" target="_blank"><img src="assets/facebook.png" class="img-responsive" alt="facebook.com/rollingartdetailing"></a>
+          <a href="https://www.instagram.com/rollingart_detailing/" target="_blank"><img src="assets/instagram.png" class="img-responsive" alt="instagram.com/rollingart_detailing"></a>
+        <!-- Images from http://www.freepik.com/ -->
+      </div>
       </div>
     </div>
 
-
-    <!-- 
-    TODO:
-    This section... disappeared. Figure out why that happened. Tried to separate navbar into 
-    separate bootstrap row and now contents are not aligned.
-     -->
-    <div class="row" id="navigation-bar" align="center">
-      <p align="right">
-            <a class="link" href="#about">About</a>
-            <a class="link" href="#services">Services</a>
-            <a class="link" href="#contact">Contact</a>
-            <a class="link" href="#gallery">Gallery</a>
-      </p>
-    </div>
-
-    <div class="row" id="title-bar" align="center">
+    <div class="row" id="title-bar">
       <!-- 
       TODO:
       Background image for website banner
@@ -66,7 +60,7 @@
     We want the "About" and "Quote" to be on separate rows for smaller devices, columns side by side for larger devices.
     -->
     <div class="row" align="center">
-      <div class="col-xs-7" id="about" align="center">
+      <div class="col-xs-12 col-lg-7" id="about">
         <h1>
             <p name="about">About</p>
         </h1>
@@ -75,7 +69,7 @@
         </div>
       </div>
 
-      <div class="col-xs-5" id="quote" align="center">
+      <div class="col-xs-12 col-lg-5 quote">
           <h4>
               <blockquote class="blockquote">
                   <p class="m-b-0">I am dedicated to restoring and maintaining my customers cars that we as enthusiasts see as <b>Rolling Art</b>.</p>

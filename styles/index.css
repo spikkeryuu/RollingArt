@@ -9,7 +9,7 @@ a {
 
 a:hover 
 {
-     color: inherit;
+     color: ;
      text-decoration: none;
      cursor: pointer;  
 }
@@ -33,19 +33,25 @@ a:hover
 #social-media img {
 	display: inline;
 	margin: 0 5px;
+	color: black;
 }
 
 #navigation-bar {
-	background-color: #37393d;
-	color: white;
-	align-content: right;
+	text-decoration: underline;
 	padding-right: 10px;
 	word-spacing: 1px;
+	background-color: black;
+	border: 1px solid;
+	border-color: #37393d;
+	font-size: 12px;
 }
 
 #title-bar {
 	background-color: #37393d;
-	background: url("assets/porsche.jpg") no-repeat center center fixed;
+	background-image: url("assets/porsche.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
 	background-size: 100% auto;
 	height: auto;
 }
@@ -59,7 +65,7 @@ a:hover
 	width: 70%;
 }
 
-#quote {
+.quote {
 	margin: 0px auto;
 }
 
